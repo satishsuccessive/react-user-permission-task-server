@@ -1,0 +1,17 @@
+type Users {
+    traineeEmail: String
+    reviewerEmail: String
+}
+type Role {
+    inputEmail: String
+    selectRole: String
+}
+input UserDetails {
+    inputEmail: String
+    selectRole: String
+}
+
+type Msg {
+    inputMsg:String
+    roleMsg:String
+}

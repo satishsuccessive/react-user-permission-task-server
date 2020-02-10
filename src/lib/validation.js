@@ -1,0 +1,1 @@
+export const regex = /^[a-zA-Z0-9.]+@(successive){1}\.(tech){1}$/;
