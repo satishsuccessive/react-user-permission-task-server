@@ -1,6 +1,6 @@
 type Query {
   getUser: [Users]
-  getRole: [Role]
+  getRole(data:Role):Return
 }
 
 type Mutation {

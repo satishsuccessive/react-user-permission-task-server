@@ -24,11 +24,9 @@ const regex = /[a-zA-Z\d]+.+@(?<name>successive)+.(tech)/g;
 const validateEmail = (email) => regex.test(email);
 const validEmail = [];
 const invalidEmail = [];
-console.log(validateEmail('satish.maurya@successive.tech'),'------uuuuuuuuuuuuuu')
 const vaildUser = (users) => {
     users.forEach(({ traineeEmail, reviewerEmail}) => {
 
-        console.log('vaildation----',traineeEmail,reviewerEmail,validateEmail(traineeEmail),validateEmail(reviewerEmail));
         if (validateEmail(traineeEmail) && validateEmail(reviewerEmail)) {
             validEmail.push({traineeEmail, reviewerEmail});
         }
@@ -39,6 +37,3 @@ const vaildUser = (users) => {
 }
 
 vaildUser(users);
-console.log('vaild',validEmail);
-
-console.log('invalid',invalidEmail);

@@ -1,6 +1,6 @@
   const users = [
     {
-    traineeEmail: 'trainee1@successive.tech',
+    traineeEmail: 'satish.maurya@successive.tech',
     reviewerEmail: 'reviewer1@successive.tech',
     },
     {
