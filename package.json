@@ -1,4 +1,5 @@
 {
+  "homepage": "http://satishsuccessive.github.io/react-user-permission-task-server",
   "name": "graphql-server",
   "version": "1.0.0",
   "description": "",
@@ -9,7 +10,9 @@
     "prebuild": "rm -rf build",
     "build": "babel src -d build --copy-files",
     "start": "nodemon",
-    "del": "rim raf node_modules && rim raf package-lock.json && npm i"
+    "del": "rim raf node_modules && rim raf package-lock.json && npm i",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -27,10 +30,11 @@
     "nodemon": "^2.0.2"
   },
   "devDependencies": {
-    "apollo-server": "2.9.16",
     "@babel/cli": "7.8.3",
     "@babel/core": "7.8.3",
     "@babel/preset-env": "7.8.3",
-    "@babel/register": "7.8.3"
+    "@babel/register": "7.8.3",
+    "apollo-server": "2.9.16",
+    "gh-pages": "^2.2.0"
   }
 }
