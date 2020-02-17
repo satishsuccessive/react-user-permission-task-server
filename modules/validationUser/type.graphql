@@ -1,0 +1,26 @@
+type Users {
+    inputEmail: String
+    selectRole: String
+}
+
+input Role {
+    inputEmail: String
+    selectRole: String
+}
+
+input UserDetails {
+    inputEmail: String
+    selectRole: String
+}
+type Return {
+    read: String
+    write: String
+    delete: String
+    error: String
+    role:String
+}
+type Msg {
+    inputMsg:String
+    roleMsg:String
+    error:String
+}
